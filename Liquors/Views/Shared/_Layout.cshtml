@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Liquors">
+    <meta name="author" content="Milena Pokorska">
+
+    <title>Liquors</title>
+
+    <link href="~/css/storeapp.css" rel="stylesheet" />
+
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+
+    <link href="~/css/tether-theme-arrows-dark.css" rel="stylesheet" />
+    <link href="~/css/tether-theme-arrows.css" rel="stylesheet" />
+    <link href="~/css/tether-theme-basic.css" rel="stylesheet" />
+    <link href="~/css/tether.css" rel="stylesheet" />
+
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-reboot.css" rel="stylesheet" />
+
+   
+</head>
+
+<body>
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Promil</a>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")">Home</a>
+                </li>
+               
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+       @RenderBody()
+    </div><!-- /.container -->
+
+    <script src="~/js/jquery-3.2.1.js"></script>
+    <script src="~/js/popper.js"></script>
+    <script src="~/js/bootbox.min.js"></script>
+    <script src="~/js/tether.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+
+</body>
+</html>
