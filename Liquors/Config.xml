@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <Root>
-<DbConnectionString>Data Source=localhost:1433;Initial Catalog=LiquorsDb;Integrated Security=True</DbConnectionString>
+<DbConnectionString>Data Source=.\SQLEXPRESs;Initial Catalog=LiquidsDb;Integrated Security=True</DbConnectionString>
 </Root>
