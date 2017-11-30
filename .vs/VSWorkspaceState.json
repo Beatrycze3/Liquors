@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Liquors",
+    "\\Liquors\\Controllers",
+    "\\Liquors\\Views\\Shared",
+    "\\Liquors\\Views\\Wine"
+  ],
+  "SelectedNode": "\\Liquors\\Controllers\\WineController.cs",
+  "PreviewInSolutionExplorer": false
+}

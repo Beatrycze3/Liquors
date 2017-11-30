@@ -1,14 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Liquors.Model.WineModel;
+using System.Linq;
+using System.Threading.Tasks;
+using Liquors.Model;
 
-namespace Liquors.Model
+namespace Liquors.ViewModels
 {
-    public class Wine
+    public class WineModel
     {
-        public int Id { get; set; }
-
         [Required]
         [StringLength(100)]
         public string Name { get; set; }
@@ -17,9 +18,6 @@ namespace Liquors.Model
         public string Region { get; set; }
         public string Winery { get; set; }
 
-        [ForeignKey("Id")]
-        public Alcohol Alcohol { get; set; }
+        public double Rating { get; set; }
     }
-   
 }
-

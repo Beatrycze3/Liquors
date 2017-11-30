@@ -38,15 +38,16 @@
                     <a class="nav-link" href="@Url.Action("Index", "Home")">Home</a>
                     <a class="nav-link" href="@Url.Action("Index", "Wine")">Wine</a>
                 </li>
-               
             </ul>
-
         </div>
     </nav>
 
-    <div class="container">
-       @RenderBody()
-    </div><!-- /.container -->
+<div class="container">
+    <div class="row">
+        @RenderBody()
+    </div>
+    
+</div><!-- /.container -->
 
     <script src="~/js/jquery-3.2.1.js"></script>
     <script src="~/js/popper.js"></script>
