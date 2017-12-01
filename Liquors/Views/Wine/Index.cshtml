@@ -24,15 +24,18 @@
                         <td>@Html.DisplayFor(x => item.Winery)</td>
                         <td>@Html.DisplayFor(x => item.Rating)</td>
 
-                        @*<td>
-                                <a class="btn btn-warning btn-sm" href="@Url.Action("Rate", new {id = item.Id})">Rate</a>
-                            </td>*@
+                        <td>
+                            <a class="btn btn-warning btn-sm" href="@Url.Action("Rate", new {id=item.Id})">Rate</a>
+                        </td>
                     </tr>
                 }
             </table>
         </div>
-        <div class="col-4">
-                <a class="btn btn-success" href="@Url.Action("Add")">Add</a>
-            </div>
+            
     </div>
-</div>
+    <div class="row">
+        <div class="col-4">
+            <a class="btn btn-success" href="@Url.Action("Add")">Add</a>
+        </div>
+    </div>
+    </div>

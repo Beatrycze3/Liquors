@@ -10,5 +10,6 @@ namespace Liquors.Model
         public int Year { get; set; }
 
         public ICollection<AlcoholVintage> AlcoholVintage { get; set; }
+
     }
 }

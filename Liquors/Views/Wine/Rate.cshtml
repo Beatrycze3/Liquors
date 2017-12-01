@@ -1,0 +1,42 @@
+﻿@model Liquors.ViewModels.RateModel
+
+<div class="container">
+    
+    @using (Html.BeginForm("Rate", "Wine", FormMethod.Post))
+    {
+        
+        <div class="form-group row">
+            @Html.LabelFor(x => x.Name, new {@class = "col-form-label col-4"})
+            <div class="col-8">
+                @Html.DisplayFor(x => x.Name)
+                @Html.HiddenFor(x=>x.Name)
+                @Html.HiddenFor(x=>x.AlcoholId)
+            </div>
+            </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(x => x.Year, new { @class = "col-form-label col-4" })
+            <div class="col-8">
+                @Html.TextBoxFor(x => x.Year, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(x => x.Rating, new { @class = "col-form-label col-4" })
+            <div class="col-8">
+                @Html.TextBoxFor(x => x.Rating, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(x => x.Comment, new { @class = "col-form-label col-4" })
+            <div class="col-8">
+                @Html.TextBoxFor(x => x.Comment, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <button class="btn btn-primary">Rate</button>
+    }
+
+
+</div>

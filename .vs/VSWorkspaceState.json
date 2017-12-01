@@ -3,9 +3,12 @@
     "",
     "\\Liquors",
     "\\Liquors\\Controllers",
+    "\\Liquors\\Model",
+    "\\Liquors\\ViewModels",
+    "\\Liquors\\Views",
     "\\Liquors\\Views\\Shared",
     "\\Liquors\\Views\\Wine"
   ],
-  "SelectedNode": "\\Liquors\\Controllers\\WineController.cs",
+  "SelectedNode": "\\Liquors.sln",
   "PreviewInSolutionExplorer": false
 }

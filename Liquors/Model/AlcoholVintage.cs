@@ -14,5 +14,7 @@ namespace Liquors.Model
 
         public Alcohol Alcohol { get; set; }
         public Vintage Vintage { get; set; }
+
+        public ICollection<UserRate> UserRates { get; set; }
     }
 }
