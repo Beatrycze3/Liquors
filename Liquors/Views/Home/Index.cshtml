@@ -1,9 +1,13 @@
 ﻿<div class="container">
+   
+    
     <div class="row">
-        
         
         @if (User.Identity.IsAuthenticated)
         {
+            <div class="col-6">
+                <p>Hi @User.Identity.Name!</p>
+            </div>
             <div class="col-6">
                 <a class="btn btn-link" href="@Url.Action("LogOut","Account")">Sign Out</a>
             </div>
@@ -18,9 +22,6 @@
                 <a class="btn btn-link" href="@Url.Action("Register","Account")">Register</a>
             </div>
         }
-        
-
-        
     </div>
 
 </div>
