@@ -41,7 +41,7 @@ namespace Liquors.Controllers
                 IdentityResult identityResult = await UserManager.CreateAsync(user, registerModel.Password);
                 if (identityResult.Succeeded)
                 {
-                    await SignInManager.PasswordSignInAsync(user, registerModel.Password, true, false);
+                    await SignInManager.PasswordSignInAsync(user, registerModel.Password, false, false);
                     return RedirectToAction("Index", "Home");
                 }
                 else

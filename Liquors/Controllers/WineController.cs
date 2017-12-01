@@ -137,7 +137,7 @@ namespace Liquors.Controllers
                     Context.SaveChanges();
                 }
 
-                var user = Context.Users.Single(x => User.Identity.IsAuthenticated);
+               var user = Context.Users.Single(x => x.UserName==User.Identity.Name);
                  
                 var userRate = new UserRate()
                 {
@@ -152,7 +152,7 @@ namespace Liquors.Controllers
                 return RedirectToAction("Index", "Wine");
             }
 
-            return Content("X");
+            return View(rateModel);
         }
 
     }

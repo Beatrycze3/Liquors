@@ -1,12 +1,26 @@
 ﻿<div class="container">
     <div class="row">
-        <div class="col-4">
-            <a class="btn btn-link" href="@Url.Action("LogIn","Account")">Log In</a>
-        </div>
-        <div class="col-4">
-            <a class="btn btn-link" href="@Url.Action("Register","Account")">Register</a>
-        </div>
+        
+        
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="col-6">
+                <a class="btn btn-link" href="@Url.Action("LogOut","Account")">Sign Out</a>
+            </div>
+        }
+        else
+        {
+            <div class="col-6">
+                <a class="btn btn-link" href="@Url.Action("LogIn","Account")">Sign In</a>
+            </div>
 
+            <div class="col-4">
+                <a class="btn btn-link" href="@Url.Action("Register","Account")">Register</a>
+            </div>
+        }
+        
+
+        
     </div>
 
 </div>

@@ -14,9 +14,17 @@ namespace Liquors.ViewModels
         [Required]
         [StringLength(100)]
         public string Name { get; set; }
+        [Required]
+        [StringLength(100)]
         public string Type { get; set; }
+        [Required]
+        [StringLength(100)]
         public string Country { get; set; }
+        [Required]
+        [StringLength(100)]
         public string Region { get; set; }
+        [Required]
+        [StringLength(100)]
         public string Winery { get; set; }
 
         public double Rating { get; set; }
